@@ -46,9 +46,8 @@
     line-height: 125%;
 }
 
-
 /*MEDIA QUERIES*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .banner {
         width: 85%;
         margin: 1em auto;
