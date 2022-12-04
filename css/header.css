@@ -1,0 +1,146 @@
+.header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: var(--sec-font);
+}
+
+.header__brand-container {
+    padding: 1em;
+}
+
+.header__brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__brand-text {
+    padding-left: 0.3em;
+    color: var(--main-white);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.header__menu-1440 {
+    display: none;
+}
+
+.header__menu-input {
+    display: none;
+}
+
+.header__menu-label {
+    cursor: pointer;
+}
+
+.header__menu-img {
+    padding: 1.5em 2em;
+    background-image: url("../img/menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: all 1s;
+}
+
+
+.header__menu-nav {
+    width: 100%;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    background-color: var(--main-white);
+
+
+    transition: top 1s ease-in-out;
+}
+
+.header__menu-input:checked~.header__menu-nav {
+    top: 100%;
+}
+
+.header__menu-input:checked~.header__menu-label>.header__menu-img {
+    background-color: var(--main-white);
+    background-image: url("../img/menu-x.svg");
+}
+
+.menu__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu__list:first-child {
+    padding-top: 0;
+}
+
+.menu__list:last-child {
+    padding-bottom: 0;
+}
+
+.menu__list-item {
+    width: 100%;
+    padding: 1em 0;
+    font-size: 20px;
+    text-align: end;
+}
+
+.menu__list-item-active {
+    background: url('../img/link_active.svg') no-repeat left center; 
+    background-position: 1em;
+}
+
+.menu__list-link {
+    padding-right: 1em;
+    text-decoration: none;
+    color: var(--main-black);
+}
+
+.menu__list-link-inactive:hover {
+    color: var(--sec-green);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 1440px) {
+    .header {
+        width: 85%;
+        margin: 1em auto;
+    }
+
+    .header__brand-img {
+        width: 70px
+    }
+
+    .header__menu-label {
+        display: none;
+    }
+
+    .header__menu-nav {
+        display: none;
+    }
+
+    .header__menu-1440 {
+        display: flex; 
+    }
+
+    .menu__list-1440 {
+        display: flex;
+    }
+    
+    .menu__list-link {
+        color: var(--main-white);
+        padding: 1em;
+    }
+
+    .menu__list-item-active {
+        border-bottom: 5px solid var(--main-white);
+        background-image: none;
+    }
+
+    .menu__list-link-inactive:hover {
+        background-color: var(--main-white);
+        color: var(--background-green);
+    }
+}
