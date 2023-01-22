@@ -1,10 +1,8 @@
 # Start
 Prática de HTML e CSS baseado no projeto do @moses
 
-Designer: https://www.figma.com/@moses6  
+[Figma do Designer](https://www.figma.com/@moses6) - [Layout](https://www.figma.com/community/file/1155004603628157484)
 
-Layout: https://www.figma.com/community/file/1155004603628157484
-
-Site: https://viniaraujo99.github.io/Start/
+**[Start](https://viniaraujo99.github.io/Start/) - Site construído por mim a partir do layout acima.**
 
 Responsividade: 375px | 1440px
