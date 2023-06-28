@@ -1,4 +1,4 @@
-.header { 
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,6 +32,7 @@
 }
 
 .header__menu-label {
+    display: block;
     cursor: pointer;
 }
 
@@ -88,7 +89,7 @@
 }
 
 .menu__list-item-active {
-    background: url('../img/link_active.svg') no-repeat left center; 
+    background: url('../img/link_active.svg') no-repeat left center;
     background-position: 1em;
 }
 
@@ -122,13 +123,13 @@
     }
 
     .header__menu-1440 {
-        display: flex; 
+        display: flex;
     }
 
     .menu__list-1440 {
         display: flex;
     }
-    
+
     .menu__list-link {
         color: var(--main-white);
         padding: 1em;
