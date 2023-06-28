@@ -16,6 +16,10 @@
     text-transform: uppercase;
 }
 
+.banner__img {
+    width: 100%;
+}
+
 .banner__title {
     font-family: var(--main-font);
     color: var(--main-white);
