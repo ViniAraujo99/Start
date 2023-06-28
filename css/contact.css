@@ -29,11 +29,12 @@
 .contact__container-mapForm {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .contact__map {
-    width: 335px;
     height: 224px;
+    width: 100%;
 }
 
 .contact__form {
@@ -107,8 +108,8 @@
     }
 
     .contact__map {
-        width: 575px;
         height: 400px;
+        width: 100%;
     }
 
     .contact__container-form {
